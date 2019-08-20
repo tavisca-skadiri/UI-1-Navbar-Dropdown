@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UI Navbar and Dropdown</title>
+	<link rel="stylesheet" type="text/css" href="nav.css">
+</head>
+<body>
+	<div class="navbar">
+		<ul>
+			<li><a href="" class="logo">My Logo</a></li>
+			<li><a href="#" onclick="document.getElementById('firstlink').style.display = 'block';">Tab1</a></li>
+			<li><a href="#" onclick="document.getElementById('secondlink').style.display = 'block';">Tab2</a></li>
+			<li><a href="#" onclick="document.getElementById('thirdlink').style.display = 'block';">Tab3</a></li>
+			<li><a href="https://www.google.com/">Google.com</a></li>
+		</ul>
+	</div>
+	<div class="hidden" id="firstlink">
+		<p>First Link</p>
+	</div>
+	<div class="hidden" id="secondlink">
+		<p>Second Link</p>
+	</div>
+	<div class="hidden" id="thirdlink">
+		<p>Third Link</p>
+	</div>
+	<div class="dropdown">
+  		<p class="dropbtn">Dropdown</p>
+  			<div class="dropdown-content">
+		    <a href="#">Link 1</a>
+		    <a href="#">Link 2</a>
+		    <a href="#">Link 3</a>
+	  	</div>
+	</div>
+</body>
+</html>
